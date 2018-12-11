@@ -8,6 +8,7 @@ class App extends Component {
 	};
 
 	render() {
+		console.log('render', this.props)
 		return (
 			<div className="App">
 				<button onClick={this.handleOnClick}>Click</button>
@@ -18,6 +19,7 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
+	console.log('map', state)
 	return {
 		items: state.items
 	};
